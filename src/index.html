@@ -7,7 +7,27 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Cifra de Cesar</h1>
+      
+      <div id="duascaixastexto">
+        <div id="box1"> 
+          <textarea id="caixa1" name="texto" spellcheck="false"></textarea><br>
+          <button id="botao1">Criptografar</button>
+        </div>
+
+        <div id="box2">
+          <textarea id="caixa2" name="texto" spellcheck="false" class="form-control origem"></textarea><br>
+          <button id="botao2">Descriptografar</button>
+        </div>
+      </div>
+     
+     
+
+      <div id="resultado1">
+        <h2>Sua mensagem é:</h2>
+        <p id="resultado"></p>
+      </div>
+
     </div>
     <script src="index.js" type="module"></script>
   </body>
