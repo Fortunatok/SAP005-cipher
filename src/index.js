@@ -1,7 +1,7 @@
 /* AQUI ESTAMOS LINKANDO O CIPHER.JS COM O NOSSO INDEX.JS */
 import cipher from './cipher.js';
 
-console.log(cipher);
+// console.log(cipher);
 
 /* COM O GETELEMENTBYID PEGUEI O QUE VOU PRECISAR NO MEU JS*/
 var botao1 = document.getElementById("botaoCrip");

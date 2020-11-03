@@ -9,18 +9,19 @@
     <div id="root">
 
       <!-- CABEÇALHO DA PAGINA  -->
-      <h1>Cifra de Cesar</h1>
+      <div id="imagem">
+      <img src="img/capa.png">
+      </div>
 
       <!-- TEXTO QUE VAI APARECER PARA EXPLICAR QUAL A FUNCIONALIDADE DA MINHA PAGINA-->
-      <p id="txtIntroducao">Bem vinde!<br>
-      Você sabe o que é cifra de Cesar?<br>
-      Trata-se de um tipo de cifra de substituição, na qual cada letra de um texto a ser criptografado é substituída por outra letra
-      presente no alfabeto porém deslocada um certo número de posições à esquerda ou à direita.<br>
-      <br>
-      Vamos criptografar uma mensagem simplesmente trocando cada letra da mensagem presente no alfabeto normal pela sua
-      equivalente no alfabeto cifrado. A descriptografia é justamento o processo inverso. 
-      <br>
-      Vamos tentar? 
+      <p id="txtBemvinde">Bem vinde!</p>
+      <p id="txtIntro">Me responde uma coisa, quem nunca quis mandar uma mensagem e ficou morrendo de medo de outra <br>
+        pessoa ler além do destinatario? Pensando nestas situações criamos o Criptografando, que nada mais é do que um <br>
+        metodo de codificar as mensagem e enviar com segurança para a galera!<br>
+        Explicando rapidinho como funciona, no campo "Chave de deslocamento" você seleciona quantas casas as letras vão avançar <br>
+        e é importante lembrar deste numero para que a outra pessoa consiga descodificar a mensagem ok? Então na caixinha de texto<br>
+        voce digita a mensagem, aperta o botão correspondente e tcharaaaa a magica aconteceu.<br>
+        Agora é só copiar a mensagem e enviar por ai! Gostou?
       </p>
 
       <!--INPUT PARA COLOCAR A QUANTIDADE DE LETRAS QUE VAI ALTERAR NA MENSAGEM-->
@@ -43,7 +44,7 @@
       
      <!-- ESPAÇO ONDE VAI APARECER A MENSAGEM CRIP/DESCRIP -->
             <div id="divResultado">
-          <h2>SUA MENSAGEM É:</h2>
+          <p id="msg">SUA MENSAGEM É:</p>
           <p id="resultado"></p>
         </div>
 

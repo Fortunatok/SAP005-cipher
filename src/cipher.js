@@ -1,25 +1,26 @@
 /* FUNCOES QUE VAO CRIP/DECRIP AS MENSAGENS  */
 
-
+/* FUNÇÃO DE CRIPTAR */
 const cipher = {
-    cifrar (desloc, texto) { 
+    cifrar (desloc,texto) { 
       let final = "";
       for (let i=0; i<texto.length; i++){
-        let resultado1 = (texto.charCodeAt(i)+desloc-65)%26
-        let resultado2 = resultado1 + 65
-        let imprimir = String.fromCharCode(resultado2)
-        final += imprimir
+        let cod1 = (texto.charCodeAt(i)+desloc-65)%26
+        let cod2 = cod1 + 65
+        let result = String.fromCharCode(cod2)
+        final += result
       }
       return final
     },
 
+/* FUNÇÃO DE DESCRIPTAR */
     decifrar (desloc,texto) {
       let final = "";
       for (let i=0; i<texto.length; i++){
-        let resultado1 = (texto.charCodeAt(i)-desloc+65)%26
-        let resultado2 = resultado1 + 65
-        let imprimir = String.fromCharCode(resultado2)
-        final += imprimir
+        let cod1 = (texto.charCodeAt(i)-desloc+65)%26
+        let cod2 = cod1 + 65
+        let result = String.fromCharCode(cod2)
+        final += result
       }
       return final
     },
