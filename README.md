@@ -4,7 +4,7 @@ Criei esta pagina com o intuito de ajudar as pessoas a enviarem aquela mensagem 
 Procurei criar algo com um design neutro onde homens e mulheres se sentissem a vontade em meu site, com comandos simples para que a experiencia seja leve para todos!
 
 ##.2. PROCESSO.
-![](https://ibb.co/qR0x2FQ)
+![](https://uploaddeimagens.com.br/images/002/946/533/full/CIFRA.jpg?1604499764)
 
 ##.3. Informações tecnicas.
 
