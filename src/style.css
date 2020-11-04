@@ -1,16 +1,17 @@
 
 body { /* CORPO DO TEXTO */
-    margin: 0;
+    margin: auto;
     margin-bottom: 100px;
     padding: 0;
     background-color: #f8f8f8;
+    max-width: 60%;
 } 
 
-#imagem {
+#imagem { /* IMAGEM CABEÇALHO */
     text-align: center;
 }
 
-#txtBemvinde {
+#txtBemvinde { /* PRIMEIRA FRASE PAGINA */
     text-align: center;
     margin: 50px;
     font-size: 30px;
@@ -45,17 +46,17 @@ body { /* CORPO DO TEXTO */
 #caixaTxt1 { /* TEXTAREA 1 */
     width: 300px;
     height: 100px;
-    border: 5px black dotted;
+    border: 5px solid;
     border-radius: 10px;
-    border-color: coral;
+    border-color: rgba(0, 0, 0, 0.493);
 }
 
 #caixaTxt2 { /* TEXTAREA 2 */
     width: 300px;
     height: 100px;
-    border: 5px black dotted;
+    border: 5px solid;
     border-radius: 10px;
-    border-color: coral;
+    border-color: rgba(0, 0, 0, 0.493);
 }
 
 #botaoCrip { /* BOTAO PARA CRIPTAR */
@@ -65,6 +66,7 @@ body { /* CORPO DO TEXTO */
     border-radius: 6px;
     font-size: 15px;
     margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.562);
 }
 
 #botaoDecrip { /* BOTAO PARA DECRIPTAR */
@@ -74,20 +76,16 @@ body { /* CORPO DO TEXTO */
     border-radius: 6px;
     font-size: 15px;
     margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.562);
 }
 
 #divResultado { /* DIV ONDE TEM O SUBTITULO E AREA PARA IMPRIMIR A FRASE */
     text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
 }
  
-#msg { /* SUBTITULO */
-    text-align: center;
-    margin: 50px;
-    font-size: 20px;
-    color :black;
-    font-family: fantasy;
-}
-
 #resultado { /* AREA PARA IMPRIMIR A FRASE */
     text-align: center;
 }

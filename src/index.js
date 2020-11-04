@@ -11,7 +11,7 @@ function imprimir() {
     var desloc = document.getElementById("deslocamento").value;
     desloc = parseInt(desloc)
     var primeiroTexto = document.getElementById("caixaTxt1").value;
-    var msgCifrada = cipher.cifrar(desloc,primeiroTexto);
+    var msgCifrada = cipher.encode(desloc,primeiroTexto);
     document.getElementById("resultado").innerHTML = msgCifrada;
 }
 
@@ -26,10 +26,10 @@ function imprimir2() {
     var desloc = document.getElementById("deslocamento").value;
     desloc = parseInt(desloc)
     var segundoTexto = document.getElementById("caixaTxt2").value;
-    var msgCifrada2 = cipher.decifrar (desloc,segundoTexto);
+    var msgCifrada2 = cipher.decode (desloc,segundoTexto);
     document.getElementById("resultado").innerHTML = msgCifrada2;
+    
 }
 
 /* EVENTO QUE ESTA PARTINDO DO MEU BOTAO E CHAMANDO A FUNÇÃO QUANDO HOUVER UM CLICK */
 botao2.addEventListener("click", imprimir2);
-

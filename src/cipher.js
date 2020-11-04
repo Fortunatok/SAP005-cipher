@@ -2,30 +2,39 @@
 
 /* FUNÇÃO DE CRIPTAR */
 const cipher = {
-    cifrar (desloc,texto) { 
+    encode (desloc,texto) { 
       let final = "";
-      for (let i=0; i<texto.length; i++){
-        let cod1 = (texto.charCodeAt(i)+desloc-65)%26
-        let cod2 = cod1 + 65
-        let result = String.fromCharCode(cod2)
-        final += result
-      }
-      return final
+        for (let i=0; i<texto.length; i++){
+          if (texto.charCodeAt(i) >= 65 && texto.charCodeAt(i) <=90){
+            let cod1 = (texto.charCodeAt(i)+desloc-65)%26
+            let cod2 = cod1 + 65
+            let result = String.fromCharCode(cod2)
+            final += result
+          }
+          else{
+            throw new TypeError(alert("Inserir apenas letras!"))
+          }
+        }
+           return final
     },
 
 /* FUNÇÃO DE DESCRIPTAR */
-    decifrar (desloc,texto) {
+    decode (desloc,texto) {
       let final = "";
       for (let i=0; i<texto.length; i++){
-        let cod1 = (texto.charCodeAt(i)-desloc+65)%26
-        let cod2 = cod1 + 65
-        let result = String.fromCharCode(cod2)
-        final += result
+        if (texto.charCodeAt(i) >= 65 && texto.charCodeAt(i) <=90){
+          let cod1 = (texto.charCodeAt(i)-desloc+65)%26
+          let cod2 = cod1 + 65
+          let result = String.fromCharCode(cod2)
+          final += result
+        }
+        else{
+          throw new TypeError(alert("Inserir apenas letras!"))
+        }
       }
-      return final
+        return final
     },
-};
-
+  }
 export default cipher;
 
 
