@@ -12,7 +12,7 @@ const cipher = {
             final += result
           }
           else{
-            throw new TypeError(alert("Inserir apenas letras!"))
+            throw new TypeError(alert("Inserir apenas letras maiusculas!"))
           }
         }
            return final
@@ -29,7 +29,7 @@ const cipher = {
           final += result
         }
         else{
-          throw new TypeError(alert("Inserir apenas letras!"))
+          throw new TypeError(alert("Inserir apenas letras maiusculas!"))
         }
       }
         return final
