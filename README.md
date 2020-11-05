@@ -8,4 +8,4 @@ Procurei criar algo com um design neutro onde homens e mulheres se sentissem a v
 Para este projeto foi usado HTML, CSS, JAVASCRIPT, DOM, TESTES UNITARIOS, GIT E GITHUB
 
 
-![](https://uploaddeimagens.com.br/images/002/946/533/full/CIFRA.jpg?1604499764)
+![](https://i.ibb.co/ygp9t5g/cifra.jpg)
