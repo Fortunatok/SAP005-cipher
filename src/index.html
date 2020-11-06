@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html> 
   <head>
-    <meta charset="utf-8">
-    <title>Criptografando</title>
-    <link rel="stylesheet" href="style.css" />
+      <meta charset="utf-8">
+      <title>Criptografando</title>
+      <link rel="stylesheet" href="style.css" />
+
+      <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
   </head>
   <body>
-    <div id="root">
-
+    
       <!-- CABEÇALHO DA PAGINA  -->
-      <div id="imagem">
-      <img src="img/capa.png">
-      </div>
-
+      <h1>Criptografando</h1>
+      <br>    
+      <br>
+      <h2>Sabe aquela mensagem que ninguem pode ler? <br> Aqui você consegue enviar de forma segura!</h2>
+      <hr>
+  
       <!-- TEXTO QUE VAI APARECER PARA EXPLICAR QUAL A FUNCIONALIDADE DA MINHA PAGINA-->
-      <p id="txtBemvinde">Bem vinde!</p>
-      <p id="txtIntro">Me responde uma coisa, quem nunca quis mandar uma mensagem e ficou morrendo de medo de outra <br>
-        pessoa ler além do destinatario? Pensando nestas situações criamos o Criptografando, que nada mais é do que um
-        metodo de codificar as mensagem e enviar com segurança para a galera!<br>
+      <p id="txtIntro">Pensando em segurança e privacidade criamos o criptografando, que nada mais é do que um
+        metodo de codificar as mensagem e enviar com segurança para a galera!
+        <br>
+        <br>
         Explicando rapidinho como funciona, no campo "Deslocamento" você seleciona quantas casas as letras vão avançar
         e é importante lembrar deste numero para que a outra pessoa consiga descodificar a mensagem ok? Então na caixinha de texto
         voce digita a mensagem, aperta o botão correspondente e tcharaaaa a magica aconteceu.<br>
+        <br>
         Agora é só copiar a mensagem e enviar por ai! Gostou?
       </p>
+
+      <div id="root">
 
       <!--INPUT PARA COLOCAR A QUANTIDADE DE LETRAS QUE VAI ALTERAR NA MENSAGEM-->
       <div id="divDeslocamento">
         Deslocamento: <input type="number" id="deslocamento" size="10" title="Chave" min="1" max="100" placeholder="Chave" autofocus />
       </div>
+      
       
       <!-- CAIXAS TEXTO E BOTOES -->
       <div id="divCaixasTxt">
@@ -44,7 +56,7 @@
       
      <!-- ESPAÇO ONDE VAI APARECER A MENSAGEM CRIP/DESCRIP -->
         <div id="divResultado">
-          <img src="img/mensagem.png" width="250px">
+          <h3>Sua mensagem é:</h3>
           <p id="resultado"></p>
         </div>
 
